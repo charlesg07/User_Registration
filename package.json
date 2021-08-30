@@ -1,55 +1,32 @@
 {
-  "name": "mern-crud",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "bootstrap": "^5.1.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-hook-form": "^7.14.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "name": "user-reg",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "client": "cd client && npm run start",
+    "server": "nodemon index --ignore client/",
+    "client-install": "cd client && npm install",
+    "server-install": "npm install",
+    "install-all": "concurrently \"npm run client-install\"\"npm run server-install\"", 
+    "dev": "concurrently \"npm run client\"\"npm run server\""
+
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/charles-allfiction/MERN-CRUD.git"
+    "url": "git+https://github.com/charles-allfiction/User_Registration.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/charles-allfiction/MERN-CRUD/issues"
+    "url": "https://github.com/charles-allfiction/User_Registration/issues"
   },
-  "homepage": "https://github.com/charles-allfiction/MERN-CRUD#readme"
+  "homepage": "https://github.com/charles-allfiction/User_Registration#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.2"
+  }
 }
